@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./qualification.css";
 
 const Qualification = () => {
-  const [toggleState, setToggleState] = useState(1);
+  const [toggleState, setToggleState] = useState(2);
   const toggleTab = (index) => {
     setToggleState(index);
   };
@@ -13,18 +13,7 @@ const Qualification = () => {
       <span className="section__subtitle">My personal journey</span>
       <div className="qualification__container container">
         <div className="qualification__tabs">
-          <div
-            className={
-              toggleState === 1
-                ? "qualification__button qualification__active button--flex"
-                : "qualification__button button--flex"
-            }
-            onClick={() => toggleTab(1)}
-          >
-            <i className="uil uil-graduation-cap qualification__icon"></i>
-            {""}
-            Education
-          </div>
+          
 
           <div
             className={
@@ -38,9 +27,20 @@ const Qualification = () => {
             {""}
             Experience
           </div>
+          <div
+            className={
+              toggleState === 1
+                ? "qualification__button qualification__active button--flex"
+                : "qualification__button button--flex"
+            }
+            onClick={() => toggleTab(1)}
+          >
+            <i className="uil uil-graduation-cap qualification__icon"></i>
+            {""}
+            Education
+          </div>
         </div>
         <div className="qualification__sections">
-          {/* Education */}
           <div
             className={
               toggleState === 1
@@ -59,7 +59,7 @@ const Qualification = () => {
                   B.E. Information Science and Engineering
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2020 - Present
+                  <i className="uil uil-calendar-alt"></i> 2020 - 2024
                 </div>
               </div>
               <div className="">
@@ -115,19 +115,37 @@ const Qualification = () => {
                 : "qualification__content"
             }
           >
+            <div className="qualification__data">
+              <div></div>
+
+              <div className="">
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+              <div className="">
+                <h3 className="qualification__title">
+                Fifty-Fintech, Bangalore
+                </h3>
+                <span className="qualification__subtitle">Front-end Developer</span>
+                <div className="qualification__calender">
+                  <i className="uil uil-calendar-alt"></i>
+                  {" "} July 2023 - Present
+                </div>
+              </div>
+            </div>
             {/* Work 1 */}
             <div className="qualification__data">
               <div className="">
                 <h3 className="qualification__title">
                   {" "}
-                  NA
+                  Fiverr Freelancing, Remote
                 </h3>
                 <span className="qualification__subtitle">
-                  NA
+                  Blockchain and Web Developer
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i>
-                  2020 - Present
+                  {" "}2020 - Present
                 </div>
               </div>
               <div className="">
@@ -146,15 +164,36 @@ const Qualification = () => {
               </div>
               <div className="">
                 <h3 className="qualification__title">
-                  NA
+                  Polygon Guild, Bangalore
                 </h3>
-                <span className="qualification__subtitle">NA</span>
+                <span className="qualification__subtitle">Guild Lead</span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i>
-                  2011 - 2019
+                  {" "} Feb 2023 - Present
                 </div>
               </div>
             </div>
+
+            <div className="qualification__data">
+              <div className="">
+                <h3 className="qualification__title">
+                  {" "}
+                  GetBoarded Technology, Portugal
+                </h3>
+                <span className="qualification__subtitle">
+                  Blockchain Developer
+                </span>
+                <div className="qualification__calender">
+                  <i className="uil uil-calendar-alt"></i>
+                  {" "}Dec 2022 - March 2023
+                </div>
+              </div>
+              <div className="">
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>

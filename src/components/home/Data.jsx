@@ -60,14 +60,14 @@ const Data = () => {
       <h3 className="home__subtitle">
         I'm a{" "}
         <Typed
-          strings={[" web developer", " blockchain developer"]}
+          strings={[" MERN Stack developer", " blockchain developer"]}
           typeSpeed={100}
           backSpeed={100}
           loop
         />
       </h3>
       <p className="home__description">
-        passionate and proficient blockchain developer
+      Polygon Guild Lead, Bangalore 💜 | Front-end Dev @Fifty-Fintech | Hackman'23 Winner 🏆 | Student at Bangalore Institute of Technology'24
       </p>
       <div className="button__align">
         <a href="#contact" className="button button--flex">

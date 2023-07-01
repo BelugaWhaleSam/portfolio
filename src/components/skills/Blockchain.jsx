@@ -38,24 +38,6 @@ const Blockchain = () => {
             <i class="bx bx-badge-check"></i>
 
             <div className="">
-              <h3 className="skills__name">ERC20</h3>
-              <span className="skills__level">beginner</span>
-            </div>
-          </div>
-
-          <div className="skills__data">
-            <i class="bx bx-badge-check"></i>
-
-            <div className="">
-              <h3 className="skills__name">Ether js</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-
-          <div className="skills__data">
-            <i class="bx bx-badge-check"></i>
-
-            <div className="">
               <h3 className="skills__name">Chai</h3>
               <span className="skills__level">Intermediate</span>
             </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import AboutImg from "../../assets/Cute-Cat.jpg";
-import CV from "../../assets/MohdSameerDec.pdf";
+import CV from "../../assets/MohdSameerResume.pdf";
 import Info from "./Info";
 
 const About = () => {
@@ -15,11 +15,7 @@ const About = () => {
         <div className="about__data">
           <Info />
           <p className="about__description">
-            Hi, I'm Mohd Sameer, I'm a third year engineering student @
-            Bangalore Institute of Technology, also a passionate and proficient
-            blockchain developer having keen interest in decentralisation of web
-            and economy. I seek to contribute my extensive skill set to the
-            world of future blockchains.
+          I am Mohd Sameer, a 3rd year student at Bangalore Institute of Technology specialising in MERN Stack and blockchain development.<br/> Additionally, I have freelanced on projects, published technical blogs and lead the Polygon Guild in Bangalore. Let's connect!
           </p>
           <a download="" href={CV} className="button button--flex">
             Download CV
