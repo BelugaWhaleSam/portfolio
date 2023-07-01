@@ -60,9 +60,9 @@ const Data = () => {
       <h3 className="home__subtitle">
         I'm a{" "}
         <Typed
-          strings={[" Polygon Guild Lead, Bangalore 💜"," Hackman'23 Hackathon Winner 🏆"," MERN Stack developer", " blockchain developer"]}
-          typeSpeed={100}
-          backSpeed={100}
+          strings={[" Polygon Guild Lead, Bangalore 💜"," Hackman'23 Hackathon Winner 🏆"," MERN Stack developer", " Blockchain developer"]}
+          typeSpeed={30}
+          backSpeed={30}
           loop
         />
       </h3>
