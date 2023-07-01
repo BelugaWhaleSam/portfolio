@@ -145,7 +145,7 @@ const Qualification = () => {
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i>
-                  {" "}2020 - Present
+                  {" "}May 2023 - July 2023
                 </div>
               </div>
               <div className="">

@@ -60,7 +60,7 @@ const Data = () => {
       <h3 className="home__subtitle">
         I'm a{" "}
         <Typed
-          strings={[" MERN Stack developer", " blockchain developer"]}
+          strings={[" Polygon Guild Lead, Bangalore 💜"," Hackman'23 Hackathon Winner 🏆"," MERN Stack developer", " blockchain developer"]}
           typeSpeed={100}
           backSpeed={100}
           loop
