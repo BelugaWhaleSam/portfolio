@@ -27,6 +27,9 @@
 
 .qualification__active {
     color: var(--title-color-dark);
+    border: 2px solid rgb(68, 68, 68);
+    padding: 0.5rem 0.5rem;
+    border-radius: 20px;
 }
 
 .qualification__sections {
