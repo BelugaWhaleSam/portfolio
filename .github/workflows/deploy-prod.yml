@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       # Add any build steps here. For example:
-      - name: Setup Node.js
+      - name: Setup Node.js v18.x
         uses: actions/setup-node@v2
         with:
           node-version: '18'
