@@ -8,6 +8,7 @@ import Work7 from '../../assets/w7.png';
 import Work8 from '../../assets/w8.png';
 import Work9 from '../../assets/w9.jpeg';
 import Work10 from '../../assets/w10.jpeg';
+import Work11 from '../../assets/w11.png';
 
 // export the array of objects
 
@@ -38,6 +39,14 @@ export const projectsData = [
   },
   {
     id: 4,
+    image: Work11,
+    title: "Feedback Hub",
+    category: "Web",
+    link: "https://github.com/BelugaWhaleSam/feedbackHub",
+    wlink: "https://fastfeedback-vert-nu.vercel.app/"
+  },
+  {
+    id: 5,
     image: Work1,
     title: "Transaction dapp",
     category: "Blockchain",
@@ -45,7 +54,7 @@ export const projectsData = [
     wlink: "https://elegant-banoffee-686225.netlify.app/"
   },
   {
-    id: 5,
+    id: 6,
     image: Work2,
     title: "Twitter Clone Web3.0",
     category: "Blockchain",
@@ -53,7 +62,7 @@ export const projectsData = [
     wlink: "https://super-zuccutto-86048d.netlify.app/"
   },
   {
-    id: 6,
+    id: 7,
     image: Work3,
     title: "Social media Dapp",
     category: "Blockchain",
@@ -61,7 +70,7 @@ export const projectsData = [
     wlink: "https://spectacular-cocada-2e4b64.netlify.app/"
   },
   {
-    id: 7,
+    id: 8,
     image: Work5,
     title: "Ethereum Todolist",
     category: "Blockchain",
@@ -69,7 +78,7 @@ export const projectsData = [
     wlink: "https://ethereum-todolist.vercel.app/"
   },
   {
-    id: 8,
+    id: 9,
     image: Work4,
     title: "Blockchain Blog ",
     category: "Web",
@@ -77,7 +86,7 @@ export const projectsData = [
     wlink: "https://github.com/BelugaWhaleSam/Blog-DB"
   },
   {
-    id: 9,
+    id: 10,
     image: Work6,
     title: "Secret Whisper App",
     category: "Web",
@@ -85,7 +94,7 @@ export const projectsData = [
     wlink: "https://github.com/BelugaWhaleSam/Secret"
   },
   {
-    id: 10,
+    id: 11,
     image: Work7,
     title: "Todo List with Database",
     category: "Web",
