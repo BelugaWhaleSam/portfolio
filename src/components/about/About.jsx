@@ -15,7 +15,9 @@ const About = () => {
         <div className="about__data">
           <Info />
           <p className="about__description">
-          I am Mohd Sameer, a 3rd year student at Bangalore Institute of Technology specialising in MERN Stack and blockchain development.<br/> Additionally, I have freelanced on projects, won a hackathon, published technical blogs and lead the Polygon Guild in Bangalore. Let's connect!
+          I am Mohd Sameer, a 3rd year student at Bangalore Institute of Technology specialising in MERN and blockchain development. 
+I have experience in blockchain and front-end through internship and by contributing to freelance projects.
+Additionally, I have published technical blogs, won a hackathon, contributed to open source and lead the Polygon Guild in Bangalore. 
           </p>
           <a download="" href={CV} className="button button--flex">
             Download CV
