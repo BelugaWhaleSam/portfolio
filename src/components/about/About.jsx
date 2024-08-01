@@ -16,7 +16,7 @@ const About = () => {
           <Info />
           <p className="about__description">
           I am Mohd Sameer, graduated from Bangalore Institute of Technology'24 specialising in MERN and blockchain development. 
-I have experience in blockchain and front-end through internship and by contributing to freelance projects on Fiverr.
+I have experience in blockchain and front-end through internships.
 Additionally, I have published technical blogs, won a hackathon, contributed to open source and lead the Polygon Guild in Bangalore. 
           </p>
           <a download="" href={CV} className="button button--flex">

@@ -67,7 +67,7 @@ const Data = () => {
         />
       </h3>
       <p className="home__description">
-         Associate Consultant - Oracle (OFSS) 💻 | Ex Intern-50Fin | Fiverr Level-1 Freelancer | Polygon Guild Bangalore
+         Associate Consultant - Oracle (OFSS) 💻 | Ex Intern-50Fin | Polygon Guild Bangalore
         Lead 💜 | Hackman'23 Hackathon Winner 🏆 | District Runner-up Basketball 🏀 | CBSE Clusters-West Zone Roller Skating 🛼
       </p>
       <div className="button__align">

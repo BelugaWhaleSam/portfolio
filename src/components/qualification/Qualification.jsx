@@ -157,14 +157,14 @@ const Qualification = () => {
               <div className="">
                 <h3 className="qualification__title">
                   {" "}
-                  Fiverr Freelancing, Remote
+                  Polygon Guild, Bangalore
                 </h3>
                 <span className="qualification__subtitle">
-                  Blockchain and Web Developer @Level 1
+                  Guild Lead
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i>
-                  {" "}May 2023 - June 2023
+                  {" "} Feb 2023 - Jun 2024
                 </div>
               </div>
               <div className="">
@@ -183,17 +183,17 @@ const Qualification = () => {
               </div>
               <div className="">
                 <h3 className="qualification__title">
-                  Polygon Guild, Bangalore
+                GetBoarded Technology, Portugal
                 </h3>
-                <span className="qualification__subtitle">Guild Lead</span>
+                <span className="qualification__subtitle">Blockchain Developer</span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i>
-                  {" "} Feb 2023 - Present
+                  {" "} Dec 2022 - Mar 2023
                 </div>
               </div>
             </div>
 
-            <div className="qualification__data">
+            {/* <div className="qualification__data">
               <div className="">
                 <h3 className="qualification__title">
                   {" "}
@@ -211,7 +211,7 @@ const Qualification = () => {
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
-            </div>
+            </div> */}
             
           </div>
         </div>
