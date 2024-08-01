@@ -67,7 +67,8 @@ const Data = () => {
         />
       </h3>
       <p className="home__description">
-      Polygon Guild Lead, Bangalore 💜 | Ex-Frontend Dev @50Fin | Hackathon Hackman'23 Winner 🏆 | Student at Bangalore Institute of Technology'24
+         Associate Consultant - Oracle (OFSS) 💻 | Ex Intern-50Fin | Fiverr Level-1 Freelancer | Polygon Guild Bangalore
+        Lead 💜 | Hackman'23 Hackathon Winner 🏆 | District Runner-up Basketball 🏀 | CBSE Clusters-West Zone Roller Skating 🛼
       </p>
       <div className="button__align">
         <a href="#contact" className="button button--flex">

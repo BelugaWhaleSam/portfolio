@@ -116,8 +116,27 @@ const Qualification = () => {
             }
           >
             <div className="qualification__data">
-              <div></div>
+              <div className="">
+                <h3 className="qualification__title">
+                  {" "}
+                  Oracle (OFSS), Bangalore
+                </h3>
+                <span className="qualification__subtitle">
+                  Associate Consultant
+                </span>
+                <div className="qualification__calender">
+                  <i className="uil uil-calendar-alt"></i>
+                  {" "}Aug 2024 - Present
+                </div>
+              </div>
+              <div className="">
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+            </div>
 
+            <div className="qualification__data">
+              <div></div>
               <div className="">
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
@@ -129,7 +148,7 @@ const Qualification = () => {
                 <span className="qualification__subtitle">Front-end Developer</span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i>
-                  {" "} July 2023 - Aug 2023
+                  {" "} Jun 2023 - Aug 2023
                 </div>
               </div>
             </div>
@@ -141,7 +160,7 @@ const Qualification = () => {
                   Fiverr Freelancing, Remote
                 </h3>
                 <span className="qualification__subtitle">
-                  Blockchain and Web Developer
+                  Blockchain and Web Developer @Level 1
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i>

@@ -76,7 +76,7 @@ const Frontend = () => {
             <i class="bx bx-badge-check"></i>
 
             <div className="">
-              <h3 className="skills__name">Git-Github</h3>
+              <h3 className="skills__name">Git</h3>
               <span className="skills__level">Intermediate</span>
             </div>
             

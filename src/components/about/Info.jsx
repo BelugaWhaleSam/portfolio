@@ -17,8 +17,8 @@ const Info = () => {
 
       <div className="about__box">
         <i class="bx bxl-discord-alt about__icon"></i>
-        <h3 className="about__title">Support</h3>
-        <span className="about__subtitle">Discord</span>
+        <h3 className="about__title">LC & GFG</h3>
+        <span className="about__subtitle">200+ DSA Problems</span>
       </div>
     </div>
   );

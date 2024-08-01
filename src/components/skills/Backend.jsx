@@ -11,7 +11,7 @@ const Backend = () => {
             <i class="bx bx-badge-check"></i>
 
             <div className="">
-              <h3 className="skills__name">Node js</h3>
+              <h3 className="skills__name">Node.js</h3>
               <span className="skills__level">Intermediate</span>
             </div>
           </div>
@@ -29,7 +29,7 @@ const Backend = () => {
             <i class="bx bx-badge-check"></i>
 
             <div className="">
-              <h3 className="skills__name">Mongoose</h3>
+              <h3 className="skills__name">GraphQL</h3>
               <span className="skills__level">beginner</span>
             </div>
           </div>
@@ -38,7 +38,7 @@ const Backend = () => {
             <i class="bx bx-badge-check"></i>
 
             <div className="">
-              <h3 className="skills__name">Express js</h3>
+              <h3 className="skills__name">Express.js</h3>
               <span className="skills__level">beginner</span>
             </div>
           </div>
@@ -47,17 +47,36 @@ const Backend = () => {
 
             <div className="">
               <h3 className="skills__name">Firebase</h3>
-              <span className="skills__level">beginner</span>
+              <span className="skills__level">Intermediate</span>
             </div>
           </div>
           <div className="skills__data">
             <i class="bx bx-badge-check"></i>
 
             <div className="">
-              <h3 className="skills__name">Supabase</h3>
+              <h3 className="skills__name">Apollo</h3>
               <span className="skills__level">beginner</span>
             </div>
           </div>
+
+          <div className="skills__data">
+            <i class="bx bx-badge-check"></i>
+
+            <div className="">
+              <h3 className="skills__name">Nest.js</h3>
+              <span className="skills__level">beginner</span>
+            </div>
+          </div>
+
+          <div className="skills__data">
+            <i class="bx bx-badge-check"></i>
+
+            <div className="">
+              <h3 className="skills__name">Docker</h3>
+              <span className="skills__level">beginner</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
