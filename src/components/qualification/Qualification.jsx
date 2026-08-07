@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./qualification.css";
+import Section from "../shared/Section";
 
 const Qualification = () => {
   const [toggleState, setToggleState] = useState(2);
@@ -8,13 +9,14 @@ const Qualification = () => {
   };
 
   return (
-    <section id='qualification' className="qualification section">
-      <h2 className="section__title">Qualification</h2>
-      <span className="section__subtitle">My personal journey</span>
+    <Section
+      id="qualification"
+      className="qualification"
+      title="Qualification"
+      subtitle="My personal journey"
+    >
       <div className="qualification__container container">
         <div className="qualification__tabs">
-          
-
           <div
             className={
               toggleState === 2
@@ -119,10 +121,10 @@ const Qualification = () => {
               <div className="">
                 <h3 className="qualification__title">
                   {" "}
-                  Oracle (OFSS), Bangalore
+                  Oracle (OFSS), Mumbai
                 </h3>
                 <span className="qualification__subtitle">
-                  Associate Consultant
+                  Associate Consultant (Backend Engineer)
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i>
@@ -216,7 +218,7 @@ const Qualification = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

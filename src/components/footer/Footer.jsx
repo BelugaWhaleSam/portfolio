@@ -1,49 +1,53 @@
 import React from "react";
-import './footer.css';
+import "./footer.css";
+import { profile, socials } from "../../data/profile";
 
-const Footer = () => {
-  return (
-    <footer className="footer">
-      <div className="footer__container container">
-        <h1 className="footer__title">Sameer</h1>
-        <ul className="footer__list">
-          <li>
-            <a href="#about" className="footer__link">
-              About
+const footerLinks = [
+  { href: "#about", label: "About" },
+  { href: "#skills", label: "Skills" },
+  { href: "#project", label: "Projects" },
+];
+
+const Footer = () => (
+  <footer className="footer">
+    <div className="footer__container container">
+      <h1 className="footer__title">{profile.shortName}</h1>
+
+      <ul className="footer__list">
+        {footerLinks.map(({ href, label }) => (
+          <li key={href}>
+            <a href={href} className="footer__link">
+              {label}
             </a>
           </li>
-          <li>
-            <a href="#project" className="footer__link">
-              Projects
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="footer__link">
-              Contact
-            </a>
-          </li>
-        </ul>
-        <div className="footer__social">
+        ))}
+        <li>
+          <a href={`mailto:${profile.email}`} className="footer__link">
+            Email
+          </a>
+        </li>
+      </ul>
+
+      <div className="footer__social">
+        {socials.map(({ name, icon, url }) => (
           <a
-            href="https://twitter.com/BelugaSam"
+            key={name}
+            href={url}
             className="footer__social-link"
             target="_blank"
+            rel="noreferrer"
+            aria-label={name}
           >
-            <i class="bx bxl-twitter"></i>
+            <i className={icon}></i>
           </a>
-          <a
-            href="https://www.instagram.com/aboihasnoname/"
-            className="footer__social-link"
-            target="_blank"
-          >
-            <i class="bx bxl-instagram"></i>
-          </a>
-        </div>
-        <span className="footer__copy">
-         &#169; BelugaSam. All rights reserved.</span>
+        ))}
       </div>
-    </footer>
-  );
-};
+
+      <span className="footer__copy">
+        &#169; BelugaSam. All rights reserved.
+      </span>
+    </div>
+  </footer>
+);
 
 export default Footer;

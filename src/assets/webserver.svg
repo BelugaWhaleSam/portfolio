@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="Multithreaded web server: clients dispatched through a thread pool to worker threads">
+  <defs>
+    <linearGradient id="wsBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b1d21"/>
+      <stop offset="100%" stop-color="#0e0f12"/>
+    </linearGradient>
+    <style>
+      .mono { font-family: "SFMono-Regular", Menlo, Consolas, monospace; }
+      .lbl  { fill: #e6e6e6; font-size: 19px; font-weight: 600; }
+      .dim  { fill: #8d9096; font-size: 15px; }
+      .fade { fill: #6c6f75; font-size: 14px; }
+      .accent { fill: #d4d4d4; font-size: 15px; font-weight: 600; }
+      .tiny { fill: #8d9096; font-size: 13px; }
+    </style>
+  </defs>
+
+  <rect width="640" height="360" rx="16" fill="url(#wsBg)"/>
+
+  <!-- title bar -->
+  <path d="M0 16a16 16 0 0 1 16-16h608a16 16 0 0 1 16 16v28H0z" fill="#26282d"/>
+  <circle cx="26" cy="22" r="5.5" fill="#4a4d53"/>
+  <circle cx="46" cy="22" r="5.5" fill="#4a4d53"/>
+  <circle cx="66" cy="22" r="5.5" fill="#4a4d53"/>
+  <text class="mono dim" x="320" y="27" text-anchor="middle">webserver :8010</text>
+
+  <!-- headline -->
+  <text class="mono lbl" x="36" y="92">one server, three thread models</text>
+  <text class="mono fade" x="36" y="118">$ java ClientSimulator --clients 200</text>
+
+  <!-- clients -->
+  <g>
+    <rect x="36" y="148" width="112" height="26" rx="6" fill="#2b2e34" stroke="#3c4046"/>
+    <text class="mono tiny" x="92" y="166" text-anchor="middle">client</text>
+    <rect x="36" y="180" width="112" height="26" rx="6" fill="#2b2e34" stroke="#3c4046"/>
+    <text class="mono tiny" x="92" y="198" text-anchor="middle">client</text>
+    <rect x="36" y="212" width="112" height="26" rx="6" fill="#2b2e34" stroke="#3c4046"/>
+    <text class="mono tiny" x="92" y="230" text-anchor="middle">client</text>
+  </g>
+
+  <!-- dispatch arrows -->
+  <path d="M156 161h36M156 193h36M156 225h36" stroke="#5a5e65" stroke-width="2"/>
+  <path d="M188 187l8 6-8 6z" fill="#5a5e65"/>
+
+  <!-- thread pool -->
+  <rect x="206" y="140" width="164" height="106" rx="10" fill="#22252a" stroke="#3c4046"/>
+  <text class="mono accent" x="288" y="176" text-anchor="middle">ThreadPool</text>
+  <text class="mono fade" x="288" y="200" text-anchor="middle">Executor</text>
+  <text class="mono fade" x="288" y="220" text-anchor="middle">Service</text>
+
+  <path d="M380 193h36" stroke="#5a5e65" stroke-width="2"/>
+  <path d="M410 187l8 6-8 6z" fill="#5a5e65"/>
+
+  <!-- workers -->
+  <g>
+    <rect x="428" y="148" width="176" height="26" rx="6" fill="#2b2e34" stroke="#3c4046"/>
+    <text class="mono tiny" x="516" y="166" text-anchor="middle">worker-1  handle()</text>
+    <rect x="428" y="180" width="176" height="26" rx="6" fill="#2b2e34" stroke="#3c4046"/>
+    <text class="mono tiny" x="516" y="198" text-anchor="middle">worker-2  handle()</text>
+    <rect x="428" y="212" width="176" height="26" rx="6" fill="#2b2e34" stroke="#3c4046"/>
+    <text class="mono tiny" x="516" y="230" text-anchor="middle">worker-3  handle()</text>
+  </g>
+
+  <!-- comparison strip -->
+  <rect x="36" y="266" width="568" height="30" rx="8" fill="#22252a" stroke="#33363c"/>
+  <text class="mono fade" x="56" y="286">single-threaded</text>
+  <text class="mono fade" x="216" y="286">thread-per-request</text>
+  <text class="mono accent" x="424" y="286">custom thread pool</text>
+
+  <text class="mono fade" x="36" y="330">Java · Sockets · Concurrency</text>
+</svg>

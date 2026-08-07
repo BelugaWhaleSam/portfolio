@@ -1,21 +1,22 @@
 import React from "react";
 import "./skills.css";
-import Frontend from "./Frontend";
-import Backend from "./Backend";
-import Blockchain from "./Blockchain";
+import Section from "../shared/Section";
+import SkillGroup from "./SkillGroup";
+import { skillGroups } from "../../data/skills";
 
-const Skills = () => {
-  return (
-    <section className="skills section" id="skills">
-      <h2 className="section__title">Skills</h2>
-      <span className="section__subtitle">My technical level</span>
-      <div className="skills__container container grid">
-        <Blockchain />
-        <Frontend />
-        <Backend />
-      </div>
-    </section>
-  );
-};
+const Skills = () => (
+  <Section
+    id="skills"
+    className="skills"
+    title="Skills"
+    subtitle="What I reach for"
+  >
+    <div className="skills__container container">
+      {skillGroups.map((group, i) => (
+        <SkillGroup key={group.title} index={i + 1} {...group} />
+      ))}
+    </div>
+  </Section>
+);
 
 export default Skills;

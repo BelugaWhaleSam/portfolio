@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="I-Invest: Profile, Basket, Transaction and Stocks microservices over REST with Hystrix fallback, backed by Oracle DB and PostgreSQL">
+  <defs>
+    <linearGradient id="iiBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b1d21"/>
+      <stop offset="100%" stop-color="#0e0f12"/>
+    </linearGradient>
+    <style>
+      .mono { font-family: "SFMono-Regular", Menlo, Consolas, monospace; }
+      .lbl  { fill: #e6e6e6; font-size: 19px; font-weight: 600; }
+      .dim  { fill: #8d9096; font-size: 15px; }
+      .fade { fill: #6c6f75; font-size: 14px; }
+      .accent { fill: #d4d4d4; font-size: 14px; font-weight: 600; }
+      .tiny { fill: #8d9096; font-size: 13px; }
+    </style>
+  </defs>
+
+  <rect width="640" height="360" rx="16" fill="url(#iiBg)"/>
+
+  <!-- title bar -->
+  <path d="M0 16a16 16 0 0 1 16-16h608a16 16 0 0 1 16 16v28H0z" fill="#26282d"/>
+  <circle cx="26" cy="22" r="5.5" fill="#4a4d53"/>
+  <circle cx="46" cy="22" r="5.5" fill="#4a4d53"/>
+  <circle cx="66" cy="22" r="5.5" fill="#4a4d53"/>
+  <text class="mono dim" x="320" y="27" text-anchor="middle">i-invest</text>
+
+  <!-- headline -->
+  <text class="mono lbl" x="36" y="88">NIFTY 50 baskets, as microservices</text>
+  <text class="mono fade" x="36" y="112">advisors build · investors allocate · admins govern</text>
+
+  <!-- services row -->
+  <g>
+    <rect x="36" y="136" width="134" height="54" rx="10" fill="#2b2e34" stroke="#3c4046"/>
+    <text class="mono accent" x="103" y="168" text-anchor="middle">Profile</text>
+
+    <rect x="180" y="136" width="134" height="54" rx="10" fill="#2b2e34" stroke="#3c4046"/>
+    <text class="mono accent" x="247" y="168" text-anchor="middle">Basket</text>
+
+    <rect x="324" y="136" width="134" height="54" rx="10" fill="#2b2e34" stroke="#3c4046"/>
+    <text class="mono accent" x="391" y="168" text-anchor="middle">Transaction</text>
+
+    <rect x="468" y="136" width="134" height="54" rx="10" fill="#2b2e34" stroke="#3c4046"/>
+    <text class="mono accent" x="535" y="168" text-anchor="middle">Stocks</text>
+  </g>
+
+  <!-- connectors down to the transport strip -->
+  <path d="M103 190v16M247 190v16M391 190v16M535 190v16" stroke="#5a5e65" stroke-width="2"/>
+
+  <!-- transport / resilience strip -->
+  <rect x="36" y="206" width="566" height="42" rx="10" fill="#22252a" stroke="#33363c"/>
+  <text class="mono dim" x="56" y="232">REST APIs</text>
+  <text class="mono fade" x="186" y="232">Spring Security  ·  Hystrix fallback</text>
+
+  <!-- persistence -->
+  <g>
+    <rect x="36" y="264" width="278" height="34" rx="8" fill="#2b2e34" stroke="#3c4046"/>
+    <text class="mono tiny" x="175" y="286" text-anchor="middle">Oracle DB</text>
+
+    <rect x="324" y="264" width="278" height="34" rx="8" fill="#2b2e34" stroke="#3c4046"/>
+    <text class="mono tiny" x="463" y="286" text-anchor="middle">PostgreSQL</text>
+  </g>
+
+  <!-- footer -->
+  <text class="mono fade" x="36" y="332">Spring Boot · Spring Data JPA · Thymeleaf</text>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="Mnemo: MCP to Kafka to Postgres pipeline with hybrid vector search">
+  <defs>
+    <linearGradient id="mnemoBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b1d21"/>
+      <stop offset="100%" stop-color="#0e0f12"/>
+    </linearGradient>
+    <style>
+      .mono { font-family: "SFMono-Regular", Menlo, Consolas, monospace; }
+      .lbl  { fill: #e6e6e6; font-size: 19px; font-weight: 600; }
+      .dim  { fill: #8d9096; font-size: 15px; }
+      .fade { fill: #6c6f75; font-size: 14px; }
+      .accent { fill: #d4d4d4; font-size: 15px; font-weight: 600; }
+    </style>
+  </defs>
+
+  <rect width="640" height="360" rx="16" fill="url(#mnemoBg)"/>
+
+  <!-- title bar -->
+  <path d="M0 16a16 16 0 0 1 16-16h608a16 16 0 0 1 16 16v28H0z" fill="#26282d"/>
+  <circle cx="26" cy="22" r="5.5" fill="#4a4d53"/>
+  <circle cx="46" cy="22" r="5.5" fill="#4a4d53"/>
+  <circle cx="66" cy="22" r="5.5" fill="#4a4d53"/>
+  <text class="mono dim" x="320" y="27" text-anchor="middle">mnemo</text>
+
+  <!-- headline -->
+  <text class="mono lbl" x="36" y="92">persistent memory for AI tools</text>
+  <text class="mono fade" x="36" y="118">$ mcp connect --server mnemo</text>
+
+  <!-- pipeline -->
+  <g>
+    <rect x="36" y="150" width="150" height="58" rx="10" fill="#2b2e34" stroke="#3c4046"/>
+    <text class="mono accent" x="111" y="185" text-anchor="middle">MCP</text>
+
+    <path d="M196 179h50" stroke="#5a5e65" stroke-width="2"/>
+    <path d="M240 173l8 6-8 6z" fill="#5a5e65"/>
+
+    <rect x="256" y="150" width="150" height="58" rx="10" fill="#2b2e34" stroke="#3c4046"/>
+    <text class="mono accent" x="331" y="185" text-anchor="middle">Kafka</text>
+
+    <path d="M416 179h50" stroke="#5a5e65" stroke-width="2"/>
+    <path d="M460 173l8 6-8 6z" fill="#5a5e65"/>
+
+    <rect x="476" y="150" width="128" height="58" rx="10" fill="#2b2e34" stroke="#3c4046"/>
+    <text class="mono accent" x="540" y="185" text-anchor="middle">pgvector</text>
+  </g>
+
+  <!-- search layer -->
+  <rect x="36" y="232" width="568" height="52" rx="10" fill="#22252a" stroke="#33363c"/>
+  <text class="mono dim" x="56" y="263">hybrid search</text>
+  <text class="mono fade" x="196" y="263">HNSW  ·  GIN  ·  full-text  ·  cosine similarity</text>
+
+  <!-- footer -->
+  <text class="mono fade" x="36" y="322">Java 17 · Spring Boot · Redis · Docker</text>
+  <text class="mono fade" x="604" y="322" text-anchor="end">idempotent</text>
+</svg>

@@ -9,7 +9,21 @@
     <!-- unicons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     
-    <title>Portfolio Sam</title>
+    <title>Mohd Sameer — Backend Developer</title>
+    <!-- Applied before first paint so the page never flashes the wrong theme -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("theme");
+          document.documentElement.dataset.theme =
+            saved === "light" || saved === "dark"
+              ? saved
+              : window.matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light";
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

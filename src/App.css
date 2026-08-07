@@ -12,8 +12,19 @@
   --title-color: hsl(var(--hue), var(--sat), 20%);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
+  --text-color-light: hsl(var(--hue), var(--sat), 60%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --container-color: #fff;
+
+  /*========== Surfaces & lines ==========*/
+  --border-color: hsl(var(--hue), var(--sat), 88%);
+  --border-color-strong: hsl(var(--hue), var(--sat), 78%);
+  --shadow-color: hsla(var(--hue), var(--sat), 0%, 0.15);
+  --ring-color: hsla(var(--hue), var(--sat), 0%, 0.34);
+  --tag-bg: hsl(var(--hue), var(--sat), 94%);
+  --tag-text: hsl(var(--hue), var(--sat), 30%);
+  --scrollbar-track: hsl(var(--hue), var(--sat), 98%);
+  --scrollbar-thumb: hsl(var(--hue), var(--sat), 20%);
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -33,6 +44,10 @@
   --font-medium: 500;
   --font-semi-bold: 600;
 
+  /*========== Layout ==========*/
+  --container-width: 760px;
+  --prose-width: 620px;
+
   /*========== Margenes Bottom ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --mb-0-25: 0.25rem;
@@ -48,6 +63,27 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
+}
+
+/*=============== DARK THEME ===============*/
+[data-theme="dark"] {
+  --title-color: hsl(var(--hue), var(--sat), 95%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 100%);
+  --text-color: hsl(var(--hue), var(--sat), 65%);
+  --text-color-light: hsl(var(--hue), var(--sat), 50%);
+  --body-color: hsl(var(--hue), var(--sat), 9%);
+  --container-color: hsl(var(--hue), var(--sat), 13%);
+
+  --border-color: hsl(var(--hue), var(--sat), 22%);
+  --border-color-strong: hsl(var(--hue), var(--sat), 32%);
+  --shadow-color: hsla(var(--hue), var(--sat), 0%, 0.5);
+  --ring-color: hsla(var(--hue), var(--sat), 100%, 0.16);
+  --tag-bg: hsl(var(--hue), var(--sat), 18%);
+  --tag-text: hsl(var(--hue), var(--sat), 80%);
+  --scrollbar-track: hsl(var(--hue), var(--sat), 9%);
+  --scrollbar-thumb: hsl(var(--hue), var(--sat), 40%);
+
+  color-scheme: dark;
 }
 
 /* Responsive typography */
@@ -75,17 +111,17 @@ html {
 }
 
 body::-webkit-scrollbar {
-  width: 14px;               /* width of the entire scrollbar */
+  width: 14px; /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: white;        /* color of the tracking area */
+  background: var(--scrollbar-track); /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background: black;   /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid white;  /* creates padding around scroll thumb */
+  background: var(--scrollbar-thumb); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid var(--scrollbar-track); /* creates padding around scroll thumb */
 }
 
 body,
@@ -99,9 +135,12 @@ textarea {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
@@ -149,9 +188,17 @@ img {
 /* Layout */
 
 .container {
-  max-width: 968px;
+  max-width: var(--container-width);
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Centered prose column, keeps paragraphs at a readable measure */
+.prose {
+  max-width: var(--prose-width);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .grid {
@@ -163,10 +210,11 @@ img {
 .button {
   display: inline-block;
   background-color: var(--title-color);
-  color: var(--container-color);
+  color: var(--body-color);
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .button:hover {
@@ -230,4 +278,3 @@ img {
     margin-right: var(--mb-1);
   }
 }
-

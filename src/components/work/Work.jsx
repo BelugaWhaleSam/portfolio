@@ -1,16 +1,17 @@
 import React from "react";
-import './work.css'
+import "./work.css";
+import Section from "../shared/Section";
 import Works from "./Works";
 
-const Work = () => {
-  return (
-    <section className="work section" id="project">
-      <h2 className="section__title">Projects</h2>
-      <span className="section__subtitle">Most recent works</span>
-
-      <Works />
-    </section>
-  );
-};
+const Work = () => (
+  <Section
+    id="project"
+    className="work"
+    title="Projects"
+    subtitle="Things I've built"
+  >
+    <Works />
+  </Section>
+);
 
 export default Work;
