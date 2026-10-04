@@ -1,21 +1,27 @@
 export const skillGroups = [
   {
     title: "Languages",
-    items: ["Java", "SQL / PLSQL", "Python", "JavaScript", "HTML / CSS"],
+    items: [
+      "Java",
+      "Spring Boot",
+      "SQL / PLSQL",
+      "Python",
+      "FastAPI",
+      "JavaScript",
+      "HTML / CSS",
+    ],
   },
   {
     title: "Backend",
     items: [
-      "Spring Boot",
       "Kafka",
       "Redis",
       "JWT",
-      "FastAPI",
-      "OIDC + OAuth 2.0",
+      "OIDC",
+      "OAuth 2.0",
       "Multithreading",
-      "Maven",
-      "JUnit",
-      "Mockito",
+      "JUnit / Mockito",
+      "Spring Data JPA / Hibernate",
     ],
   },
   {
@@ -43,6 +49,8 @@ export const skillGroups = [
       "Autosys",
       "Unix / Shell",
       "Git",
+      "Maven",
+      "Swagger",
     ],
   },
   {
