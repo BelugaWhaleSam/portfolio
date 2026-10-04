@@ -24,10 +24,11 @@ export const projectsData = [
     title: "Mnemo",
     category: "Backend",
     description:
-      "An MCP server that gives AI tools persistent, searchable memory across conversations. Token-aware chunking, idempotent Kafka consumers, and hybrid search that blends vector similarity with keyword matching.",
+      "A memory layer for AI tools: save a fact once and any MCP client can recall it by meaning across separate conversations. Kafka ingestion chunks text and batches embeddings with retries, idempotent consumers skip duplicates, and hybrid search merges pgvector HNSW similarity with Postgres full-text ranking. Redis caches repeat questions behind a per-user token-bucket rate limiter.",
     tech: [
-      "Java 17",
+      "Java 21",
       "Spring Boot",
+      "React",
       "Kafka",
       "Postgres + pgvector",
       "Redis",

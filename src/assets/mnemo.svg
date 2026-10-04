@@ -50,6 +50,6 @@
   <text class="mono fade" x="196" y="263">HNSW  ·  GIN  ·  full-text  ·  cosine similarity</text>
 
   <!-- footer -->
-  <text class="mono fade" x="36" y="322">Java 17 · Spring Boot · Redis · Docker</text>
+  <text class="mono fade" x="36" y="322">Java 21 · Spring Boot · Redis · Docker</text>
   <text class="mono fade" x="604" y="322" text-anchor="end">idempotent</text>
 </svg>
